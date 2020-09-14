@@ -1,0 +1,32 @@
+.Grid {
+    /* define grid parameters ( padding is horizontal )*/
+    --grid-gap: 20px;
+    --grid-column-count: 12;
+    --grid-padding: 50px;
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(var(--grid-column-count), 1fr);
+    grid-column-gap: var(--grid-gap);
+    padding: 0 var(--grid-padding);
+}
+
+/* redefine css variables on different media queries */
+@media screen and (max-width: 1440px) {
+    .Grid {
+        --grid-padding: 30px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .Grid {
+        --grid-padding: 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .Grid {
+        --grid-column-count: 4;
+    }
+}
+
