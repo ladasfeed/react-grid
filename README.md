@@ -1,5 +1,5 @@
 # react-grid
-Usage
+# Usage;
 Copy Grid folder to your UI folder;
 1. Go to App.tsx and write:
 
